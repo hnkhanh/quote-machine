@@ -11,11 +11,12 @@ const QuoteMBox = ({state, generateIndex}) => {
                     <p id='text' className='valign-wrapper'>{quote.quote}</p>
                     <cite id='author' className='col s4 offset-s9'>- {quote.author}</cite>
                 </div>
-                <button className="waves-effect waves btn col s2 offset-s1" >
-                    <i class="fa fa-twitter"></i>
-                    <a id="tweet-quote" rel="noreferrer" target='_blank' href= {`https://twitter.com/intent/tweet?text=${quote.quote} - ${quote.author}`} > tweet</a>
-                </button>
-                <button className='waves-effect waves-light btn col s3 offset-s5' id="new-quote" onClick={generateIndex}>New Quote</button>
+                <a id="tweet-quote" rel="noreferrer" target='_blank' href= {`https://twitter.com/intent/tweet?text=${quote.quote} - ${quote.author}`} >
+                    <button className="waves-effect waves btn col s1 offset-s1" >
+                        <i class="fa fa-twitter"></i>
+                    </button>
+                </a>
+                <button className='waves-effect waves-light btn col s3 offset-s6' id="new-quote" onClick={generateIndex}>New Quote</button>
                 
             </div>
             ) 
