@@ -12,3 +12,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.author {
+  text-align:center;
+  color: white;
+  text-decoration: none;
+  font-size: 0.83em;
+}
+
+a:visited {
+  color: white;
+} 
